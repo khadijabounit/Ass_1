@@ -549,3 +549,11 @@ print(intersection(l1,l2))
 
 
 3. [Union de listes](ex4.3)
+
+## essai chatgpt
+
+```liste1 = [1, 2, 3]
+liste2 = [4, 5, 6]
+union = liste1 + liste2
+print(union)  # Affiche [1, 2, 3, 4, 5, 6]
+```
