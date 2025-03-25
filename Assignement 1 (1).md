@@ -557,3 +557,43 @@ liste2 = [4, 5, 6]
 union = liste1 + liste2
 print(union)  # Affiche [1, 2, 3, 4, 5, 6]
 ```
+# Ex1
+```def verifier(l):
+  for i in range(len(l)-1):
+    if l[i]>l[i+1]:
+      return False
+  return True
+verifier([0, 5, 8, 8, 9])
+```
+#ex2
+```def dep1(l):
+  d=dict()
+  for i in l:
+    if i in d:
+      d[i]+=1
+    else:
+      d[i]=1
+  return d
+print("sol 1", dep1(['A', 'A', 'A', 'B', 'C', 'B', 'C', 'B', 'C', 'B']))
+
+
+
+def dep2(l):
+  d =dict()
+  for e in l:
+    if e not in d:
+      d[e]=l.count(e)
+  return d
+print("sol 2",dep2(['A', 'A', 'A', 'B', 'C', 'B', 'C', 'B', 'C', 'B']))
+
+
+def dep3(l):
+  d =dict()
+  for e in l:
+    if e not in d:
+      d[e]=1
+    else:
+      d[e]+=1
+  return d
+print("sol 3",dep3(['A', 'A', 'A', 'B', 'C', 'B', 'C', 'B', 'C', 'B']))
+```
